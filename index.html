@@ -7,9 +7,6 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,300&display=swap');
-        </style>
     </head>
 
     <body>
@@ -17,11 +14,11 @@
             <img class="logo" src="Logo-Fresh-Dew.jpg" alt="logo">
             <div class="main">
                 <ul id="main-nav">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    
-                    <li><a href="#">Contact Us</a></li>
+                    <li class="li-nav"><a href="http://freshdewhomecarellc.com">Home</a></li>
+                    <li class="li-nav"><a href="http://freshdewhomecarellc.com/about-us/">About Us</a></li>
+                    <li class="li-nav"><a href="http://freshdewhomecarellc.com/#services">Services</a></li>
+                    <li class="li-nav"><a href="http://freshdewhomecarellc.com/#testimonials">Testimonials</a></li>
+                    <li class="li-nav"><a href="http://freshdewhomecarellc.com/contact-us/">Contact Us</a></li>
                     <i id="close" class="ion-close-round"></i>
                 </ul>
             </div>
@@ -30,49 +27,251 @@
             </div>
         </section>
 
-        <section id="employee">
+        <section id="employee" class="section-p1">
             <h1>Employee Emergency Contact Form</h1>
         </section>
 
         <section id="form-details">
             <form id="form-details">
-                First Name: <input type="text" placeholder="First Name">  Last Name:<input type="text" placeholder="Last Name">
-
-                <br>Department:<input type="text" placeholder="">
+                First Name: <input type="text" placeholder="First Name" style="width: 250px;"> &nbsp;  Last Name: <input type="text" placeholder="Last Name" style="width: 250px;"> &nbsp; Department: <input type="text" placeholder="" style="width: 250px;">
             </form>
 
             <form id="form-details">
-                <p class="pc">Personal Contact Info:</p><br>
-                Home Address:<input type="text" placeholder="">
-                City : <input type="text" placeholder="">  <br>State: <input type="text" placeholder="">  Zip: <input type="text" placeholder="Zipcode">
-                <br><br>Home Telephone: <input type="text" placeholder=""> Cell Telephone: <input type="text" placeholder="">
+                <p class="pc">Personal Contact Info:</p>
+                Home Address: <input type="text" placeholder="" style="width: 250px;"> &nbsp;
+                City : <input type="text" placeholder=""> &nbsp; State: <input type="text" placeholder="">  &nbsp;Zip: <input type="text" placeholder="Zipcode">
+                <div>Home Telephone: <input type="text" placeholder=""> &nbsp; Cell Telephone: <input type="text" placeholder=""></div>
             </form>
             <form id="form-details">
-                <p class="pc">Emergency Contact Info 1:</p><br>
-                    Name:<input type="text" placeholder="">
-                    Relationship : <input type="text" placeholder="">  <br>Address: <input type="text" placeholder="">  City : <input type="text" placeholder="">  <br>State: <input type="text" placeholder="">  Zip: <input type="text" placeholder="Zipcode">
-                    <br><br>Home Telephone: <input type="text" placeholder=""> Cell Telephone: <input type="text" placeholder=""> <br><br>Work Telephone: <input type="text" placeholder=""> Employer: <input type="text" placeholder="">
+                <p class="pc">Emergency Contact Info 1:</p>
+                    Name: <input type="text" placeholder="">&nbsp;
+                    Relationship : <input type="text" placeholder="">  &nbsp; Address: <input type="text" placeholder="" style="width: 250px;">  &nbsp; <div> City : <input type="text" placeholder="">  &nbsp; State: <input type="text" placeholder=""> &nbsp;  Zip: <input type="text" placeholder="Zipcode"> &nbsp;</div> 
+                    Home Telephone: <input type="text" placeholder=""> Cell Telephone: <input type="text" placeholder=""> &nbsp; Work Telephone: <input type="text" placeholder=""> Employer: <input type="text" placeholder="">
     
-                <p class="pc">Emergency Contact Info 2:</p><br>
-                    Name:<input type="text" placeholder="">
-                    Relationship : <input type="text" placeholder="">  <br>Address: <input type="text" placeholder="">  City : <input type="text" placeholder="">  <br>State: <input type="text" placeholder="">  Zip: <input type="text" placeholder="Zipcode">
-                    <br><br>Home Telephone: <input type="text" placeholder=""> Cell Telephone: <input type="text" placeholder=""> <br><br>Work Telephone: <input type="text" placeholder=""> Employer: <input type="text" placeholder="">
-                <p class="pc">Medical Contact Info:</p><br>
-                    Doctor Name:<input type="text" placeholder=""> Phone Number : <input type="number" placeholder="">  
-                    <br><br>Dentist Name: <input type="text" placeholder=""> Phone Telephone: <input type="number" placeholder=""> 
+                <p class="pc">Emergency Contact Info 2:</p>
+                    Name: <input type="text" placeholder="">&nbsp;
+                    Relationship : <input type="text" placeholder=""> &nbsp; Address: <input type="text" placeholder="" style="width: 250px;"> &nbsp; <div>City : <input type="text" placeholder=""> &nbsp; State: <input type="text" placeholder=""> &nbsp; Zip: <input type="text" placeholder="Zipcode"> </div>&nbsp;
+                    Home Telephone: <input type="text" placeholder=""> &nbsp; Cell Telephone: <input type="text" placeholder=""> &nbsp; Work Telephone: <input type="text" placeholder=""> Employer: <input type="text" placeholder="">
+
+                <p class="pc">Medical Contact Info:</p>
+                    Doctor Name: <input type="text" placeholder=""> Phone Number : <input type="text" placeholder="">  
+                    Dentist Name: <input type="text" placeholder=""> Phone Telephone: <input type="text" placeholder=""> 
            
-            <p><input type="checkbox" checked="checked" class="input" >
-                <label class="container">I have voluntarily provided the above contact information and authorize Fresh Dew Homecare and its representatives to contact any of the above on my behalf in the event of an emergency.
-                </label>
+                    <p><strong><input type="checkbox" checked="checked" class="input" > &nbsp;I have voluntarily provided the above contact information and authorize	Fresh Dew Homecare and its representatives to contact any of the above on my behalf in the event of an emergency.
+                    </strong></p>
             </p>
 
         </form>
 
-        <button class="normal">Submit</button>
-
-
         </section>
 
+
+        <section class="section-p1" id="employee">
+            <h1>REFERENCE CHECK FORM</h1>
+        </section>
+        <section id="form-details">
+            <form id="form-details">
+                <strong>The applicant named below has applied for a position with Fresh dew Home Care LLC and has listed you as a previous Employer. We would appreciate your assistance in verifying this Applicant's employment. All information provided will be confidential. Thank you.</strong>
+                <p class="text"><em>Applicant, please fill out boxed area below only</em></p>
+
+                APPLICANT'S NAME: <input type="text" placeholder="" style="width: 250px;" > &nbsp; LAST 4 DIGITS OF SSN: <input type="text" placeholder="" style="width: 60px;"> &nbsp;
+                EMPLOYER: <input type="text" placeholder=""> &nbsp;
+                TEL: <input type="text" placeholder=""> <div>FAX: <input type="text" placeholder="" style="width: 150px;"> &nbsp; EMAIL: <input type="text" placeholder="" style="width: 250px;"> &nbsp; ADDRESS:<input type="text" placeholder="" style="width: 250px;"> </div> POSITION HELD: <input type="text" placeholder=""> &nbsp;
+                DATES EMPLOYED &ndash; FROM: <input type="date" placeholder=""> &nbsp; TO: <input type="date" placeholder="">
+
+                <p><strong><input type="checkbox" checked="checked" class="input" >&nbsp; I HEREBY AUTHORIZE THAT THE FOLLOWING INFORMATION BE RELEASED TO FRESHDEW HOMECARE LLC.</strong></p>
+                
+                SIGNATURE: <input type="text" placeholder="">  &nbsp; DATE: <input type="date" placeholder="">
+            </form>
+
+            <p class="par"><strong>Do the above employment dates correspond with your records?</strong></p>
+            <div class="par">
+                <strong><label>
+                  <input type="radio" name="choice-radio">
+                  Yes
+                </label>
+                <label>
+                  <input type="radio" name="choice-radio">
+                  No
+                </label>
+                <span>If No, please give correct information:</strong> <input type="text" placeholder=""></span>
+              </div>
+            <p class="par"><strong>Does the above position correspond with your records?</strong></p>
+            <div class="par">
+                <strong> <label>
+                  <input type="radio" name="choice-radio">
+                  Yes
+                </label>
+                <label>
+                  <input type="radio" name="choice-radio">
+                  No
+                </label>
+                <span>If No, please give correct information:</strong> <input type="text" placeholder=""></span>
+              </div>
+              <div class="par">
+                <strong> What was the candidates' attendance record? </strong> <input type="text" placeholder="">
+            </div>
+            <div class="par">
+                <strong>Was the candidate on-time and dependable?</strong> <input type="text" placeholder="">
+             </div>
+            <div class="par">
+                <strong>Would you rehire this candidate? <label>
+                    <input type="radio" name="choice-radio">
+                    Yes
+                  </label>
+                  <label>
+                    <input type="radio" name="choice-radio">
+                    No
+                  </label></strong>
+             </div>
+
+             <div class="par">
+                <strong>If No, Please Explain Why <input type="text" placeholder="">
+                </strong>
+             </div>
+             <div class="par">
+                <strong>Verified By: <input type="text" placeholder="">&nbsp; Position: <input type="text" placeholder=""> &nbsp; Date: <input type="text" placeholder="">
+                </strong>
+             </div>
+             <div class="par">
+                Call placed by: <input type="text" placeholder=""> &nbsp; Position: <input type="text" placeholder=""> &nbsp; Date: <input type="text" placeholder="">
+                
+             </div>
+             </section>
+
+             <section id="form-details">
+             <section class="section-p1" id="employee">
+                <h1>JOB DESCRIPTION FOR COMPANION / SITTER</h1>
+            </section>
+            
+                <form id="form-details">
+                    <br>Name of Employer: <input type="text" placeholder="" style="width: 250px;">
+
+                    <p class="pc">Required Job qualifications:</p>
+                        <ul class="required">
+                            <li class="main">Companion or Sitter positions require ability to read, write and follow instructions and completion of training or pass competency assessment, as appropriate, for understanding needs of population served, basic meal preparation, provision of transportation services, housekeeping, home safety, handling emergencies in the home and infection control.</li>
+                        </ul>
+              <br><br>
+                <p class="pc">Duties:</p>
+
+                        <ul>
+                            <li>Housekeeping to include sanitation</li>
+                            <li>Infection Control</li>
+                            <li>Changing linens</li>
+                            <li>Emptying Trash</li>
+                            <li>Supervision and watchful oversight</li>
+                            <li>Complete 8 hours training annually</li>
+                            <li>Successfully complete training or demonstrate understanding and practical competency In the followlng areas: understanding the needs and characteristics of elderly, handicapped, or convalescing individuals, meal preparation and serving, transportation and escort services; housekeeping to include sanitation home safety; handling medical emergencies in the home; and Infection control.</li>
+                        </ul>
+
+                     
+               <br><strong>SIGNATURE: <input type="text" placeholder=""></strong>
+
+                 </section>
+
+                 <section id="employee" class="section-p1">
+                    <h1>Fresh Dew Home Care LLC</h1> <h1>Job Offer</h1>
+                </section>
+        
+                <section id="form-details">
+                    <form id="form-details">
+                       
+                    </form>
+        
+                    <form id="form-details">
+                        <br>Employee Name: <input type="text" placeholder="" style="width: 250px;">
+
+                        
+                        <ol>
+                            <li>The employee will carry out the duties and responsibilities listed in the job description of assigned tasks, and signed by employee and employer.</li>
+                            <li>Following are the hours the employee will work:
+                                <div>Monday:</div>	<div>Tuesday:</div>
+                                <div>Wednesday:</div>	<div>Thursday:</div>
+                                <div>Friday:</div>	<div>Saturday:</div>
+                                <div>Sunday:</div>
+                            </li>
+                            <li>The employee will have the following time off: <input type="text" placeholder=""></li>
+                            <li>The employer will pay the employee: $<input type="text" size="1">.<input type="text" size="1">per hour</li>
+                            <li>When leaving, the employee will give the approximate time of return and, if possible, leave a phone number where he/she can be reached. Also, when the employee will be later returning, he/she will call to let the employer know.</li>
+                            <li>The employee is responsible for paying for long-distance telephone calls made/received by the employee.</li>
+                            <li>The employee will not be paid for scheduled hours not worked unless the time not worked is covered by a benefit covered by the employer.</li>
+                            <li>Both parties to this agreement will respect each other's individuality and treat each other accordingly. Both will attempt to be flexible and work at solving problems as they arise.</li>
+                            <li>At least 2 weeks notice will be given by the employee regarding termination of this agreement.</li>
+                        </ol>
+
+                        <br><br><br><div>Employer Signature<input type="text" style="width: 100px;"></div><div align="right">Date: <input type="date" placeholder="" text></div>
+                        <div>HR Signature<input type="text" style="width: 100px;"></div><div align="right">Date: <input type="date" placeholder="" text></div>
+                        
+
+                        
+                </form>
+    
+        
+                </section>
+
+                <section class="section-p1" id="employee">
+                    <h1>Misconduct Statement</h1>
+                </section>
+                <section id="form-details">
+                    <form id="form-details">
+                        I, <input type="text" placeholder="Your Name" style="width: 250px;"> swear under oath to never have been shown by credible evidence (e.g A court or jury, a department investigation or other reliable evidence) ) to have abused, neglected, sexually assaulted, exploited, or deprived any person or to have subjected any person to serious injury as a result of intentional or grossly negligent misconduct as evidenced by an oral or written statement to this effect obtained at the time of application.
+                         
+                   <br><br><br><strong>SIGNATURE: <input type="text" placeholder=""></strong>
+                   <br><br><br><strong>DATE: <input type="date" placeholder=""></strong>
+                   <br><br><br><strong>SIGNATURE OF AGENCY PERSONNEL: <input type="text" placeholder=""></strong>
+                   <br><br><br><strong>DATE: <input type="date" placeholder=""></strong>
+
+                </form>
+    
+                   <button class="normal">Submit</button>
+
+                     </section>
+               
+    
+
+        <footer>
+
+            <div class="footer-nav">
+                <img class="logo" src="Logo-Fresh-Dew.jpg" alt="Charlotte Andrews Clothing">
+            </div>
+
+
+            <div class="footer-nav">
+                <h2>Quick Navigation</h2>
+                <ul>
+                    <li class="li-nav"><a href="http://freshdewhomecarellc.com">Home</a></li>
+                    <li class="li-nav"><a href="http://freshdewhomecarellc.com/about-us/">About Us</a></li>
+                    <li class="li-nav"><a href="http://freshdewhomecarellc.com/#services">Services</a></li>
+                    <li class="li-nav"><a href="http://freshdewhomecarellc.com/#testimonials">Testimonials</a></li>
+                    <li class="li-nav"><a href="http://freshdewhomecarellc.com/contact-us/">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-nav">
+                <h2>Useful Links</h2>
+                <ul>
+                    <li class="li-nav"><a href="http://freshdewhomecarellc.com/book-service">Book a Service</a></li>
+                    <li class="li-nav"><a href="http://freshdewhomecarellc.com/privacy-policy/">Privacy Policy</a></li>
+                    <li class="li-nav"><a href="http://freshdewhomecarellc.com/terms-and-conditions/">Terms & Conditions</a></li>
+                </ul>
+            </div>
+
+            <div class="social-links">
+                <h2>Social Links</h2>
+                <ul>
+                    <li class="li-nav"><a href="https://www.facebook.com/freshdewhomecare.gates"><i class="ion-social-facebook"></i></a></li>
+                    <li class="li-nav"><a href="https://freshdewhomecarellc.com/#"><i class="ion-social-twitter"></i></a></li>
+                    <li class="li-nav"><a href="https://www.instagram.com/freshdewhomecare/"><i class="ion-social-instagram"></i></a></li>
+                </ul>
+            </div>
+            <section class="copyright">
+                <div class="copyright">
+                    <p class="copy">Copyrights © 2022<a href="https://freshdewhomecarellc.com/"><spin>FreshDew Homecare LLC.</spin></a>All rights reserved.</p>
+                </div>
+            
+
+
+        </footer>
         
 	
         

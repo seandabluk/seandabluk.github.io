@@ -1,8 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat' 'Lato';
+    font-family: 'League Spartan', sans-serif;
+}
+
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+
+.section-m1 {
+    margin: 40px 0;
 }
 
 #header {
@@ -36,38 +48,57 @@
     display: none;
 }
 
-
-li {
+.li-nav {
     margin: 20px;
     list-style: none;
     text-transform: uppercase;
     color: #773d73;
 }
 
+li {
+    margin: 10px;
+    list-style:decimal;
+    list-style-position:initial;
+}
+
 a {
     text-decoration: none;
     color:#773d73;
 }
+a:hover {
+    text-decoration: none;
+    color:#f776ee;
+}
 
-section h1 {
+h1 {
     color: rgb(80, 74, 74);
     text-transform: uppercase;
     text-align: center;
     text-decoration: underline;
+    font-size: 24px;
 }
 
 #form-details {
-    margin: 10px 30px;
+    margin: 20px 40px;
     padding: 5px;
     border: 1px solid #e1e1e1;
 }
 
 #form-details input {
-    width: 400px;
-    padding: 10px 10px;
+    padding: 8px;
     outline: none;
-    margin-bottom: 20px;
-    border: 1px solid #e1e1e1 ;
+    margin-bottom: 10px;
+    border: 1px solid #e1e1e1;
+}
+
+.text {
+    margin: 15px;
+    font-weight: 700;
+}
+
+.par {
+    margin-left: 40px;
+    margin-bottom: 10px;
 }
 
 .city {
@@ -78,14 +109,18 @@ section h1 {
     margin-left: 50px;
 }
 
+
+.text{
+    text-align: center;
+}
+
 .pc {
     text-decoration: underline;
     font-weight: 700;
+    margin-bottom: 15px;
 }
 
-.input {
-    max-width: 30px;
-}
+
 
 .container {
     font-weight: 700;
@@ -113,6 +148,93 @@ button.normal:hover {
     background-color: #e01818  ;
     padding: 16px 31px;
 }
+
+footer {
+    background-color: #773d73;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .logo {
+    margin-left: 30px;
+    margin-top: 100px;
+}
+
+footer h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #fff;
+    margin-left: 15px;
+}
+
+footer .copyright {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    align-content: center;
+    margin: 10px;
+}
+
+footer .copyright spin {
+    color: #eec42d;
+}
+
+footer .copyright spin:hover {
+    color: #a08421;
+}
+
+.footer-nav li a{
+    color: #eec42d;
+    font-size: 13px;
+}
+.footer-nav li a:hover{
+    color: #ffca0a;
+    font-size: 14px;
+}
+.social-links li a i {
+    color: #eec42d;
+}
+.social-links li a i:hover{
+    color: #c7a119;
+    font-size: 25px;
+}
+
+.social-links ul {
+    display: flex;
+    font-size: 25px;
+}
+
+span {
+    margin: 20px;
+}
+
+
+ul .required {
+    list-style:circle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -180,16 +302,15 @@ button.normal:hover {
         font-size: 24px;
     }
 
-    section h1 {
+    h1 {
         color: rgb(80, 74, 74);
         text-transform: uppercase;
         text-align: center;
         text-decoration: underline;
-        font-size: 14px;
+        font-size: 15px;
     }
 
     #form-details input {
-        width: 200px;
         padding: 10px 10px;
         outline: none;
         margin-bottom: 20px;
@@ -197,10 +318,10 @@ button.normal:hover {
     }
 
     #form-details {
-        margin: 10px 30px;
-        padding: 5px;
+        margin: 10px 20px;
+        
         border: 1px solid #e1e1e1;
-        font-size: 15px;
+        font-size: 12px;
     }
 
 
@@ -227,6 +348,14 @@ button.normal:hover {
     .last {
         margin-left: 0px;
     }
+
+    footer .copyright {
+        width: 100%;
+        text-align: start;
+        color: #fff;
+        margin: 10px;
+        font-size: 14px;
+    }
 }
 
 
@@ -236,4 +365,12 @@ button.normal:hover {
     }
 
 
+    footer .copyright {
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        align-content: center;
+        margin: 10px;
+        font-size: 12px;
+    }
 }
